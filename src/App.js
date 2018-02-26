@@ -4,6 +4,8 @@ import './App.css';
 import InputTag from './components/InputTag';
 import Modal from './components/Modal/Modal';
 
+import withBorder from './components/HOC/withBorder';
+
 
 class App extends Component {
   state = {
@@ -17,9 +19,10 @@ class App extends Component {
     });
   }
   render() {
+    let WithBorderInput = withBorder (InputTag);
     return (
       <div className="App">
-        <InputTag placeholder="press enter/space to + tag" />
+        <WithBorderInput placeholder="press enter/space to + tag" />
 
         <input type="button"
           onClick={this.showModal}

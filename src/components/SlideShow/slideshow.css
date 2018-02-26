@@ -1,0 +1,12 @@
+.slide-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.slide {
+    min-width: 400px;
+    margin: 15px;
+    text-align: center;
+}
