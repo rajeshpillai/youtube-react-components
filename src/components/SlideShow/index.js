@@ -4,17 +4,23 @@ import withModal from '../HOC/withModal';
 
 import './slideshow.css';
 
-
-
 export default class SlideShow extends React.Component {
-    render() {
+    constructor(props) {
+        super(props);
+    }
+    
+    componentWillMount() {
         let SlideWithModal = withModal(Slide);
-        let slides = this.props.slides.map((slide) => {
+        this.slides = this.props.slides.map((slide) => {
             return <SlideWithModal key={slide.id} url = {slide.url} />
-        })
+        });
+    }
+    
+    render() {
+        
         return (
             <div className="slide-container">
-                {slides}
+                {this.slides}
             </div>
         )
     }
