@@ -7,5 +7,5 @@ import AppSlideShow from './AppSlideShow';
 
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<AppSlideShow />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

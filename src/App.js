@@ -22,16 +22,14 @@ class App extends Component {
     let WithBorderInput = withBorder (InputTag);
     return (
       <div className="App">
-        <WithBorderInput placeholder="press enter/space to + tag" />
+        {/* <WithBorderInput placeholder="press enter/space to + tag" /> */}
 
         <input type="button"
           onClick={this.showModal}
           value="Show Modal" />
 
-        <Modal 
-            onClose={this.showModal}
-            show={this.state.show}>
-            This message is from Modal!
+        <Modal onClose={this.showModal} show={this.state.show}>
+              This message is from Modal!
         </Modal>
 
       </div>
