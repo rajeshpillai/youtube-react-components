@@ -1,0 +1,19 @@
+body {
+    margin: 20px;
+}
+.todo-list {
+    display: flex;
+    flex: 1;  /* All items same length, regardless of content */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.todo-item {
+    padding: 20px;
+    width: 200px;
+    background-color: coral;
+    color: white;
+    margin: 10px;
+    user-select: none;
+
+}

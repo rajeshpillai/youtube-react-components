@@ -9,7 +9,7 @@ import withBorder from './components/HOC/withBorder';
 
 class App extends Component {
   state = {
-    show: false
+    show: false,
   }
 
   showModal = () => {
@@ -20,6 +20,7 @@ class App extends Component {
   }
   render() {
     let WithBorderInput = withBorder (InputTag);
+
     return (
       <div className="App">
         {/* <WithBorderInput placeholder="press enter/space to + tag" /> */}
@@ -31,7 +32,6 @@ class App extends Component {
         <Modal onClose={this.showModal} show={this.state.show}>
               This message is from Modal!
         </Modal>
-
       </div>
     );
   }

@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import AppDragDropDemo from './AppDragDropDemo';
 import AppSlideShow from './AppSlideShow';
+import AppWithModal from './AppWithModal';
 
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AppWithModal />, document.getElementById('root'));
 registerServiceWorker();
